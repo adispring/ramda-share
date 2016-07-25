@@ -1,7 +1,7 @@
 {
-  "name": "first-fp",
+  "name": "ramda-playground",
   "version": "0.0.0",
-  "description": "my first js fp program",
+  "description": "ramda share @meituan",
   "main": "program.js",
   "scripts": {
     "test": "eslint . --fix && echo 'Eslint Passed\\n' && node test/ | faucet",
