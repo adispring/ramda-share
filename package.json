@@ -4,9 +4,11 @@
   "description": "ramda share @meituan",
   "main": "program.js",
   "scripts": {
-    "test": "eslint . --fix && echo 'Eslint Passed\\n' && node test/ | faucet",
     "build": "babel src -d lib",
-    "start": "node ./lib/program.js"
+    "start": "node ./lib/program.js",
+    "test": "eslint . --fix && echo 'Eslint Passed\n' && babel-tape-runner -r ./test/specs/*.js && echo 'Unit Test Passed\n | faucet'",
+    "unit-test": "babel-tape-runner -r ./test/specs/*.js && echo 'Unit Test Passed\n'",
+    "postinstall": "bash ./git-hook/git-prepush-hook.sh"
   },
   "repository": {},
   "author": "",
