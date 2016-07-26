@@ -8,7 +8,8 @@
     "start": "node ./lib/program.js",
     "test": "eslint . --fix && echo 'Eslint Passed\n' && npm run unit-test",
     "unit-test": "babel-tape-runner -r ./test/specs/*.js && echo 'Unit Test Passed\n'",
-    "postinstall": "bash ./git-hook/git-prepush-hook.sh"
+    "postinstall": "bash ./git-hook/git-prepush-hook.sh",
+    "startlib": "babel src -d lib && node ./lib/program.js"
   },
   "repository": {},
   "author": "",

@@ -6,3 +6,4 @@ node_modules/*
 
 .webpack-hmr-records.json
 *.swp
+*.swo
