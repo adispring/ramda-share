@@ -1,7 +1,13 @@
 {
   "extends": "airbnb",
   "rules": {
-    "strict": 0
+    "strict": 0,
+    "no-underscore-dangle": ["error", { "allow": ["__"] }],
+    "new-cap": ["error", { "capIsNew": false }],
+    "no-confusing-arrow": ["error", { "allowParens": true }],
+    "no-console": ["error", { "allow": ["warn", "error", "log"] }],
+    "prefer-rest-params": 0,
+    "space-before-function-paren": 0
   },
   "parserOptions": {
       "ecmaVersion": 6,
