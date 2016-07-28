@@ -7,7 +7,9 @@
     "no-confusing-arrow": ["error", { "allowParens": true }],
     "no-console": ["error", { "allow": ["warn", "error", "log"] }],
     "prefer-rest-params": 0,
-    "space-before-function-paren": 0
+    "space-before-function-paren": 0,
+    "no-unused-vars": 0,
+    "func-names": 0
   },
   "parserOptions": {
       "ecmaVersion": 6,

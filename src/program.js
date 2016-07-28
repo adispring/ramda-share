@@ -1,15 +1,37 @@
-/* eslint no-console: ["error", { allow: ["warn", "error", "log"] }] */
-/* eslint new-cap: ["error", { "capIsNew": false }] */
-// 'use strict';
 // import R from 'ramda';
-import S from 'sanctuary';
-import L from 'lodash';
 
-const match = L.curry((what, str) => str.match(what));
+const memoize = f => {
+  const cache = {};
+  return function() {
+    const argStr = JSON.stringify(arguments);
+    cache[argStr] = cache[argStr] || f.apply(f, arguments);
+    return cache[argStr];
+  };
+};
 
-console.log(match(/\s+/g, 'hello   world'));
+let count = 0;
+const sqrt = memoize(x => {
+  count += 1;
+  return x * x;
+});
 
-console.log(S.Left('Cannot divede by zero'));
+sqrt(3);
+sqrt(3);
+sqrt(3);
 
-console.log(S.Right([1, 2, 3]).inspect());
+console.log(`count: ${count}`);
 
+sqrt(4);
+sqrt(5);
+
+console.log(`count: ${count}`);
+
+// 箭头函数不会在其内部暴露出  arguments 对象
+// const memoizeArrow = f => {
+//   const cache = {};
+//   return (...args) => {
+//     const argStr = JSON.stringify(args);
+//     cache[argStr] = cache[argStr] || f.apply(f, args);
+//     return cache[argStr];
+//   };
+// };
