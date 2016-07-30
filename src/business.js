@@ -1,12 +1,15 @@
 import R from 'ramda';
 import { bizList } from '../lib/mock/biz';
 
+const tap = R.tap(console.log);
+
 const captalize = str =>
   `${R.compose(R.toUpper, R.head)(str)}${R.tail(str)}`;
 
 const bizProcessFP = R.compose(
   R.join(','),
   R.map(captalize),
+  tap,
   R.map(R.prop('name')),
   R.filter(item => item.sale > 500)
 );
