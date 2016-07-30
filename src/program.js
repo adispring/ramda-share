@@ -1,3 +1,3 @@
 // import R from 'ramda';
-import { memoize } from './memoize';
-
+// import { memoize } from './memoize';
+import { curry } from './curry';
