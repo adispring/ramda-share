@@ -4,4 +4,5 @@
 // import { business } from './business';
 // import { cubesum } from './cubesum';
 // import { map } from './map';
-import { lambda } from './lambda';
+// import { lambda } from './lambda';
+import { colsure } from './closure';
