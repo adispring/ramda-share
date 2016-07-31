@@ -1,5 +1,6 @@
 export const add = (x, y) => x + y;
 
+// curryAdd is a closure, it's inner return function can hold its context.
 export const curryAdd = (x, y) => {
   if (typeof y === 'undefined') {
     return yn => x + yn;

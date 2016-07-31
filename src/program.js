@@ -3,4 +3,5 @@
 // import { curry } from './curry';
 // import { business } from './business';
 // import { cubesum } from './cubesum';
-import { map } from './map';
+// import { map } from './map';
+import { lambda } from './lambda';
