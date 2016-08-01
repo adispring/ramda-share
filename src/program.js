@@ -1,9 +1,9 @@
 // import R from 'ramda';
-// import { memoize } from './memoize';
-// import { curry } from './curry';
-// import { business } from './business';
+import { business } from './business';
 // import { cubesum } from './cubesum';
 // import { map } from './map';
+// import { maybe } from './maybe';
 // import { lambda } from './lambda';
 // import { colsure } from './closure';
-import { maybe } from './maybe';
+// import { curry } from './curry';
+// import { memoize } from './memoize';
