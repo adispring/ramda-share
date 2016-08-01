@@ -5,4 +5,5 @@
 // import { cubesum } from './cubesum';
 // import { map } from './map';
 // import { lambda } from './lambda';
-import { colsure } from './closure';
+// import { colsure } from './closure';
+import { maybe } from './maybe';
