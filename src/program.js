@@ -1,8 +1,9 @@
-'use strict';
-var curry = require('lodash').curry;
-
-var match = curry(function(what, str) {
-  return str.match(what);
-});
-
-console.log(match(/\s+/g, "hello   world"));
+// import R from 'ramda';
+import { business } from './business';
+// import { cubesum } from './cubesum';
+// import { map } from './map';
+// import { maybe } from './maybe';
+// import { lambda } from './lambda';
+// import { colsure } from './closure';
+// import { curry } from './curry';
+// import { memoize } from './memoize';

@@ -1,0 +1,9 @@
+src/business.js -> lib/business.js
+src/closure.js -> lib/closure.js
+src/cubesum.js -> lib/cubesum.js
+src/curry.js -> lib/curry.js
+src/lambda.js -> lib/lambda.js
+src/map.js -> lib/map.js
+src/maybe.js -> lib/maybe.js
+src/memoize.js -> lib/memoize.js
+src/program.js -> lib/program.js
